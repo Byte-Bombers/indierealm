@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "valorax";
+  src: url(../../..//assets/fonts/valorax.otf);
+}
+
+* {
+  margin: 0;
+}
+
+.about-section {
+  display: grid;
+  gap: 2rem;
+  background-color: transparent;
+}
+
+.writeup {
+  background: #100101;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  color: #c7f6c6;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-image: url(../../../assets/bg-gif.gif);
+  background-size: cover;
+}
+.pictures {
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) / autoflow;
+    gap: 2rem;
+  }
+  display: flex;
+  justify-content: space-around;
+
+  height: 600px;
+  align-items: center;
+
+  background-color: #000000;
+  border-radius: 10px;
+  .dev-pic {
+    width: 100%;
+    display: flex;
+    color: antiquewhite;
+
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    position: relative;
+    .h2 {
+      display: none;
+    }
+
+    img {
+      width: 95%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 5px;
+      border-radius: 10px;
+    }
+    &:hover {
+      transform: translate(0, -10px);
+      transition: all 0.4s ease-in-out;
+      .h2 {
+        display: block;
+      }
+    }
+  }
+}
+.footer {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  border-bottom: #fff 2px solid;
+
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) / autoflow;
+  }
+
+  color: #fff;
+
+  text-align: center;
+  margin-top: 20px;
+
+  .brand {
+    .h2 {
+      font-family: "valorax";
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    color: #03a800;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+
+      text-shadow: 0 0 30px #58d356;
+    }
+  }
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) / autoflow;
+    gap: 1rem;
+    .social-logos {
+      border-radius: 3px;
+      height: 40px;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr / autoflow;
+    gap: 0.5rem;
+
+    .text-container,
+    .input {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .submit-container {
+      margin-left: 6rem;
+      width: 130px;
+      size: 100px;
+      border-radius: 7px;
+      background-color: rgb(213, 136, 41);
+      &:hover {
+        transition: all 0.1s ease-in-out;
+        background-color: rgb(213, 136, 41, 0.8);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+}
+.under-footer {
+  color: #58d356;
+  text-align: center;
+}
