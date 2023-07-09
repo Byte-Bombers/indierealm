@@ -88,6 +88,7 @@ const SHOP_DATA = [
         mrp: 2500,
         year: 2020,
         gameSize: "20 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -103,6 +104,7 @@ const SHOP_DATA = [
         mrp: 1999,
         year: 2017,
         gameSize: "9 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -118,6 +120,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2016,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -133,6 +136,7 @@ const SHOP_DATA = [
         mrp: 3499,
         year: 2017,
         gameSize: "400 MB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -148,6 +152,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2018,
         gameSize: "500 MB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -163,6 +168,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2012,
         gameSize: "500 MB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -178,6 +184,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2017,
         gameSize: "4 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -193,6 +200,7 @@ const SHOP_DATA = [
         mrp: 3099,
         year: 2015,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, mac],
       },
       {
@@ -208,6 +216,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2023,
         gameSize: "22 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -223,6 +232,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2020,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -238,6 +248,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2018,
         gameSize: "3 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -253,6 +264,7 @@ const SHOP_DATA = [
         mrp: 2199,
         year: 2019,
         gameSize: "4 GB",
+        ss: [],
         devices: [windows, mac],
       },
       {
@@ -268,6 +280,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2017,
         gameSize: "4 GB",
+        ss: [],
         devices: [windows],
       },
     ],
@@ -288,6 +301,7 @@ const SHOP_DATA = [
         mrp: 3299,
         year: 2018,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, mac],
       },
       {
@@ -303,6 +317,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2019,
         gameSize: "8 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -318,6 +333,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2022,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -333,6 +349,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2011,
         gameSize: "300 MB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -348,6 +365,7 @@ const SHOP_DATA = [
         mrp: 2499,
         year: 2011,
         gameSize: "100 MB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -363,6 +381,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2017,
         gameSize: "1.6 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -378,6 +397,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2017,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -393,6 +413,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2013,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -408,6 +429,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2021,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -423,6 +445,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2022,
         gameSize: "8 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -438,6 +461,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2017,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -453,6 +477,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2013,
         gameSize: "3 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -468,6 +493,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2014,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -483,6 +509,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2016,
         gameSize: "6 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -498,6 +525,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2012,
         gameSize: "4 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
@@ -518,6 +546,7 @@ const SHOP_DATA = [
         mrp: 4599,
         year: 2018,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -533,6 +562,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2019,
         gameSize: "1 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -548,6 +578,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2021,
         gameSize: "3 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -563,6 +594,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2012,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -578,6 +610,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2014,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -593,6 +626,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2020,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -608,6 +642,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2014,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -623,6 +658,7 @@ const SHOP_DATA = [
         mrp: 2750,
         year: 2013,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
@@ -643,6 +679,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2019,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -658,6 +695,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2022,
         gameSize: "1 GB",
+        ss: [],
         devices: [windows, mac],
       },
       {
@@ -673,6 +711,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2022,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -688,6 +727,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2015,
         gameSize: "26 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -703,6 +743,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2014,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -718,6 +759,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2011,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -733,6 +775,7 @@ const SHOP_DATA = [
         mrp: 500,
         year: 2015,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -748,6 +791,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2014,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -763,6 +807,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2014,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
@@ -783,6 +828,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2021,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -798,6 +844,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2017,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -813,6 +860,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2021,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -828,6 +876,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2001,
         gameSize: "1 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -843,6 +892,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2016,
         gameSize: "5 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -858,6 +908,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2015,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -873,6 +924,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2018,
         gameSize: "4 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -888,6 +940,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2010,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -903,6 +956,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2016,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -918,6 +972,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2018,
         gameSize: "1 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
@@ -938,6 +993,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2016,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -953,6 +1009,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2020,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -968,6 +1025,7 @@ const SHOP_DATA = [
         mrp: 1599,
         year: 2013,
         gameSize: "1 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -983,6 +1041,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2013,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -998,6 +1057,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2019,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -1013,6 +1073,7 @@ const SHOP_DATA = [
         mrp: 2599,
         year: 2012,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows],
       },
       {
@@ -1028,6 +1089,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2019,
         gameSize: "2 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
@@ -1048,6 +1110,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2021,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, mac],
       },
       {
@@ -1063,6 +1126,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2013,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -1078,6 +1142,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2021,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
       {
@@ -1093,6 +1158,7 @@ const SHOP_DATA = [
         mrp: 3599,
         year: 2015,
         gameSize: "10 GB",
+        ss: [],
         devices: [windows, linux, mac],
       },
     ],
