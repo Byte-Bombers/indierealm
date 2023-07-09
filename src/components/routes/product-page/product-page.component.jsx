@@ -43,37 +43,38 @@ const ProductPage = () => {
                 <h2 className="developer">By {productObj.developer} </h2>
                 <h2 className="year">{productObj.year}</h2>
               </div>
-              <h2 className="genre">Genre: {category}</h2>
+              <div className="genre-size">
+                <h2 className="genre">Genre: {category}</h2>
+                <h2 className="gamesize">Size: {productObj.gameSize}</h2>
+              </div>
             </div>
             <div className="mid-infos">
+              <div className="add-to-cart">
+                <Button
+                  buttonType={BUTTON_TYPE_CLASSES.inverted}
+                  onClick={addCartItemsHandler}
+                >
+                  Add To Cart
+                </Button>
+              </div>
               <div className="rating-players">
                 <h2 className="ratings">Ratings: {productObj.ratings}</h2>
                 <h2 className="players">Players: {productObj.players}</h2>
               </div>
 
-              <h2 className="gamesize">Size: {productObj.gameSize}</h2>
               <div className="price-box">
                 <h2 className="mrp">
                   <s>₹{productObj.mrp}</s>
                 </h2>
                 <h2 className="price">₹{productObj.price}</h2>
               </div>
-            </div>
-          </div>
-
-          <div className="devices-checkout">
-            <div className="d-icons">
-              {productObj.devices.map((deviceImg) => (
-                <img src={deviceImg} alt={"Eligible Device"} />
-              ))}
-            </div>
-            <div className="add-to-cart">
-              <Button
-                buttonType={BUTTON_TYPE_CLASSES.inverted}
-                onClick={addCartItemsHandler}
-              >
-                Add To Cart
-              </Button>
+              <div className="devices-checkout">
+                <div className="d-icons">
+                  {productObj.devices.map((deviceImg) => (
+                    <img src={deviceImg} alt={"Eligible Device"} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 

@@ -67,9 +67,13 @@ import UntitledGooseGame from "./assets/game-images/Untitled Goose Game - simula
 import VampireSurvivors from "./assets/game-images/Vampire Survivors - puzzle.jpg";
 import WhatRemainsOfEdithFinch from "./assets/game-images/What Remains of Edith Finch - adventure.jpg";
 
+//devices icons
+
 import windows from "./assets/plat-icons/windows.png";
 import mac from "./assets/plat-icons/mac.png";
 import linux from "./assets/plat-icons/linux.png";
+
+//genre pics
 
 import Action from "./assets/genre-pics/Action.png";
 import Adventure from "./assets/genre-pics/Adventure.png";
