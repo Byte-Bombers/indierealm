@@ -83,6 +83,9 @@ const ProductPage = () => {
           </div>
 
           <h2 className="description">❝{productObj.description}❞</h2>
+          {productObj.ss.map((SnapShot) => (
+            <img key={SnapShot} src={SnapShot} alt={"Eligible Device"} />
+          ))}
         </div>
       )}
     </div>
