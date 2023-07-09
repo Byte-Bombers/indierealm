@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CategoriesContext } from "../../../contexts/categories.context";
 import CategoryPreview from "../../category-preview/category-preview.component";
+import { SearchBar } from "./categories-preview.styles.jsx";
 
 const CategoriesPreview = () => {
   const [searchString, setSearchString] = useState("");
@@ -18,11 +19,13 @@ const CategoriesPreview = () => {
 
   return (
     <>
-      <input
-        type="text"
-        onChange={onSearchChange}
-        placeholder="search by genre"
-      />
+      <SearchBar>
+        <input
+          type="text"
+          onChange={onSearchChange}
+          placeholder="search by genre"
+        />
+      </SearchBar>
       {filteredGenre &&
         filteredGenre.map((title) => {
           const products = categories[title];

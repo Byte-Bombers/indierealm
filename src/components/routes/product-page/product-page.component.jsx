@@ -83,9 +83,14 @@ const ProductPage = () => {
           </div>
 
           <h2 className="description">❝{productObj.description}❞</h2>
-          {productObj.ss.map((SnapShot) => (
-            <img key={SnapShot} src={SnapShot} alt={"Eligible Device"} />
-          ))}
+          <div className="gameplay">
+            <h2 className="gameplay-title">Gameplay</h2>
+            <div className="ss">
+              {productObj.ss.map((SnapShot) => (
+                <img key={SnapShot} src={SnapShot} alt={"Eligible Device"} />
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </div>

@@ -2,7 +2,11 @@ import { useParams } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { CategoriesContext } from "../../../contexts/categories.context";
 import ProductCard from "../../product-card/product-card.component";
-import { CategoryContainer, CategoryTitle } from "./category.styles.jsx";
+import {
+  CategoryContainer,
+  CategoryTitle,
+  SearchBar,
+} from "./category.styles.jsx";
 
 const Category = () => {
   const { category } = useParams();
@@ -25,11 +29,14 @@ const Category = () => {
 
   return (
     <>
-      <input
-        type="text"
-        onChange={onSearchChange}
-        placeholder="search by name"
-      />
+      <SearchBar>
+        <input
+          type="text"
+          onChange={onSearchChange}
+          placeholder="search by name"
+        />
+      </SearchBar>
+
       <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
       <CategoryContainer>
         {filteredNames &&

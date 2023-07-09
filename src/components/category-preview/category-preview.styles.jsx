@@ -8,9 +8,10 @@ export const CategoryPreviewContainer = styled.div`
 `;
 
 export const Title = styled(Link)`
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 25px;
   cursor: pointer;
+  padding: 10px;
 `;
 
 export const Preview = styled.div`

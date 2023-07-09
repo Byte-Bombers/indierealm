@@ -4,9 +4,9 @@ export const SearchBar = styled.div`
 display: flex:
 flex-direction: row;
 justify-content:space around;
-width:700px;
+width:900px;
  input{
-  margin-left: 150px;
+  margin-left: 450px;
   width: 350px;
   height: 30px;
   border-radius: 6px;
@@ -24,18 +24,4 @@ width:700px;
 
 
 
-`;
-
-export const CategoryContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  row-gap: 50px;
-`;
-export const CategoryTitle = styled.h2`
-  font-size: 38px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #26ff00;
-  text-shadow: 0 0 6px #26ff00;
 `;
