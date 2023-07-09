@@ -12,13 +12,13 @@ export const CategoriesContext = createContext({
 export const CategoriesProvider = ({ children }) => {
   const [categories, setCategories] = useState({});
   const value = { categories };
-  /* useEffect(() => {
-    const setCategoriesInDB = async () => {
-      await addCollectionAndDocuments("categories", SHOP_DATA);
-    };
-    setCategoriesInDB();
-  }, []); 
-  */
+  // useEffect(() => {
+  //   const setCategoriesInDB = async () => {
+  //     await addCollectionAndDocuments("categories", SHOP_DATA);
+  //   };
+  //   setCategoriesInDB();
+  // }, []);
+
   useEffect(() => {
     const getCategoryMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
