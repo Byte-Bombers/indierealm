@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap");
+
+.product-page-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3px 3px 3px 3px;
+  color: #58d356;
+  font-family: "Quicksand", sans-serif;
+
+  background-color: #171717;
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) / autoflow;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3px 3px 3px 3px;
+    gap: 2rem;
+
+    @media screen and (max-width: 700px) {
+      display: grid;
+    }
+    .upper-section {
+      display: flex;
+      gap: 5rem;
+      margin-left: 100px;
+      margin-top: 60px;
+      align-items: center;
+      .pic {
+        height: 340px;
+        width: 280px;
+        border-radius: 15px;
+      }
+      .shortinfos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .name {
+          width: 300px;
+          display: flex;
+          word-wrap: break-word;
+          font-family: "Press Start 2P", cursive;
+          font-weight: 1;
+
+          font-size: 35px;
+        }
+        .genre {
+          display: flex;
+          font-size: 16px;
+          color: antiquewhite;
+
+          border-radius: 10px;
+          background-color: #f403a0;
+          width: 140px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+        }
+        .dev-year {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          .developer {
+            width: 140px;
+            word-wrap: break-word;
+            font-size: 15px;
+            color: antiquewhite;
+          }
+          .year {
+            display: flex;
+            border-left: 3.5px solid #c7f6c6;
+            color: rgb(255, 74, 64);
+            justify-content: center;
+            height: 40px;
+            width: 60px;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .mid-infos {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .rating-players {
+          .players {
+            font-size: 20px;
+          }
+          .ratings {
+            color: goldenrod;
+            text-shadow: 0 0 3px gold;
+            font-size: 25px;
+          }
+        }
+        .gamesize {
+          display: flex;
+          justify-content: center;
+          font-size: 20px;
+          color: #171717;
+          // border: 1px solid #c7f6c6;
+          width: 120px;
+          background-color: rgb(251, 230, 6);
+          border-radius: 10px;
+          &:hover {
+            transition: all 1s ease-in-out;
+            width: 150px;
+          }
+        }
+
+        .price-box {
+          display: flex;
+          flex-direction: row;
+          gap: 0px;
+          .mrp {
+            color: rgb(200, 208, 208);
+          }
+          .price {
+            color: gold;
+            font-size: 50px;
+            text-shadow: 0 0 8px rgb(255, 241, 159);
+            &:hover {
+              transition: all 0.15s ease-in-out;
+
+              text-shadow: 0 0 15px rgb(255, 241, 159);
+            }
+          }
+        }
+      }
+    }
+
+    .devices-checkout {
+      height: 100px;
+      width: 80%;
+      margin: 10px 90px;
+      // border: 2px solid #58d356;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+
+      .d-icons {
+        // border: 1px solid #c7f6c6;
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 5px;
+        }
+      }
+      .add-to-cart {
+        padding: 0;
+        margin: 0;
+        // border: 1px solid #c7f6c6;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          margin: 0;
+          border-radius: 10px;
+
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+      }
+    }
+
+    .description {
+      display: flex;
+      width: 80%;
+      font-family: "Quicksand", sans-serif;
+      margin: 10px 90px;
+      justify-content: center;
+      align-items: center;
+      // border: 2px solid #58d356;
+    }
+  }
+}
