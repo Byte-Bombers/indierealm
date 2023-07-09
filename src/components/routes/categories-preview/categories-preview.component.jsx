@@ -18,11 +18,11 @@ const CategoriesPreview = () => {
 
   return (
     <>
-      <input
+      {/* <input
         type="text"
         onChange={onSearchChange}
         placeholder="search by genre"
-      />
+      /> */}
       {filteredGenre &&
         filteredGenre.map((title) => {
           const products = categories[title];
