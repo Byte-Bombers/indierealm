@@ -5,6 +5,7 @@ import Home from "./components/routes/home/home.component";
 import Checkout from "./components/routes/checkout/checkout.component";
 import Navigation from "./components/routes/navigation/navigation.component";
 import { Routes, Route } from "react-router-dom";
+import PaymentForm from "./components/routes/payment-form/payment-form.component";
 
 const App = () => {
   return (
@@ -14,7 +15,10 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="shop/*" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
-        <Route path="checkout" element={<Checkout />} />
+        <Route path="checkout">
+          <Route index element={<Checkout />} />
+          <Route path="payment" element={<PaymentForm />} />
+        </Route>
       </Route>
     </Routes>
   );
