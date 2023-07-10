@@ -58,78 +58,15 @@ const PaymentForm = () => {
   return (
     <>
       {currentUser ? (
-        <>
-          <h1>Pay With Card: </h1>
-          <form onSubmit={handleSubmit}>
-            <FormInput
-              label="Card Information"
-              onChange={handleChange}
-              type="number"
-              maxlength="16"
-              pattern="\d{10}"
-              title="Please enter exactly 16 digits"
-              name="cardInformation"
-              value={cardInformation}
-            />
-
-            <FormInput
-              label="MM"
-              onChange={handleChange}
-              type="number"
-              max="12"
-              pattern="\d{10}"
-              name="month"
-              value={month}
-            />
-
-            <FormInput
-              label="YY"
-              onChange={handleChange}
-              type="number"
-              name="year"
-              value={year}
-            />
-
-            <FormInput
-              label="CVV"
-              onChange={handleChange}
-              type="password"
-              name="CVV"
-              value={CVV}
-            />
-
-            <FormInput
-              label="Name"
-              onChange={handleChange}
-              type="text"
-              name="userName"
-              value={userName}
-            />
-
-            <FormInput
-              label="Country"
-              onChange={handleChange}
-              type="text"
-              name="country"
-              value={country}
-            />
-
-            <FormInput
-              label="ZIP Code"
-              onChange={handleChange}
-              type="number"
-              name="zipCode"
-              value={zipCode}
-            />
-            <Button type="submit" buttonType={BUTTON_TYPE_CLASSES.inverted}>
-              Pay
-            </Button>
-          </form>
-        </>
-      ) : (
         <div>
-          <h1>Not Signed in Madafaka</h1>
-          <h2 onClick={navigateHandler}>Sign In</h2>
+          <h1>Welcome</h1>
+        </div>
+      ) : (
+        <div className="not-signed">
+          <h1>
+            You need to <h2 onClick={navigateHandler}>Sign In</h2> before
+            proceeding
+          </h1>
         </div>
       )}
     </>

@@ -7,11 +7,12 @@ justify-content:space around;
 width:800px;
  .search-text{
   margin-left: 510px;
+  color: #fff;
   
   width: 350px;
   height: 30px;
   border-radius: 6px;
-  background-color: antiquewhite;
+  background-color: transparent;
   &:focus {
     font-size: 20px;
     height: 50px;

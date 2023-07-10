@@ -10,7 +10,8 @@ width:900px;
   width: 350px;
   height: 30px;
   border-radius: 6px;
-  background-color: antiquewhite;
+  background-color: transparent;
+  color: #fff;
   &:focus {
     font-size: 20px;
     height: 50px;
