@@ -20,8 +20,11 @@ const Success = () => {
           </h2>
         </div>
       ) : (
-        <div>
-          <h1>Not Logged In</h1>
+        <div className="unsigned">
+          <h2>
+            Not Logged In,
+            <span> Sign In </span> Now
+          </h2>
         </div>
       )}
     </div>

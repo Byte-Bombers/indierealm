@@ -21,3 +21,14 @@
     }
   }
 }
+.unsigned {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  color: bisque;
+  font-size: 25px;
+  span {
+    color: aqua;
+  }
+}

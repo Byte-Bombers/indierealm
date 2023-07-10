@@ -159,9 +159,10 @@ const PaymentForm = () => {
         </>
       ) : (
         <div className="not-signed">
-          <h1>
-            You need to <h2 onClick={navigateHandler}>Sign In</h2> to proceed
-          </h1>
+          <h2>
+            You need to <span onClick={navigateHandler}>Sign In</span> to
+            proceed
+          </h2>
         </div>
       )}
     </>
