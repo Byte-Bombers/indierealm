@@ -27,6 +27,7 @@ Made with ❤️.
 ## Tech Stack
 
 - React
+- Vite
 - Context API
 - SCSS
 - Firebase
