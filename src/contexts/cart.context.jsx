@@ -6,6 +6,7 @@ const addItemsToCart = (cartItems, productToAdd) => {
   );
 
   if (existingCartItem) {
+    alert("Item already added");
     return cartItems;
   }
 
@@ -14,6 +15,11 @@ const addItemsToCart = (cartItems, productToAdd) => {
 
 const clearItemsFromCart = (cartItems, cartItemToRemove) =>
   cartItems.filter((cartItem) => cartItem.id !== cartItemToRemove.id);
+
+const getLocalCartData = () => {
+  const localCartData = localStorage.getItem("MyCart");
+  return localCartData ? JSON.parse(localCartData) : [];
+};
 
 export const CartContext = createContext({
   isCartOpen: false,
@@ -28,7 +34,7 @@ export const CartContext = createContext({
 // eslint-disable-next-line react/prop-types
 export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(getLocalCartData());
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
 
@@ -47,6 +53,10 @@ export const CartProvider = ({ children }) => {
       0
     );
     setCartTotal(newCartTotal);
+  }, [cartItems]);
+
+  useEffect(() => {
+    localStorage.setItem("MyCart", JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addCartItems = (productToAdd) => {
