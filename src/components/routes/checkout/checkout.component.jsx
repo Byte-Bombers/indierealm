@@ -3,6 +3,7 @@ import {
   CheckoutHeader,
   HeaderBlock,
   Total,
+  Saving,
 } from "./checkout.styles.jsx";
 import { useContext } from "react";
 import { useNavigate } from "react-router";
@@ -38,7 +39,7 @@ const Checkout = () => {
         return <CheckoutItem key={cartItem.id} cartItem={cartItem} />;
       })}
       <Total>Total: ₹{cartTotal}</Total>
-      <Total>Savings: ₹{Savings}</Total>
+      <Saving>You'll be saving ₹{Savings}</Saving>
       <Button
         buttonType={BUTTON_TYPE_CLASSES.inverted}
         onClick={navigateHandler}

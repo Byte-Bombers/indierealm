@@ -8,6 +8,14 @@ export const CheckoutContainer = styled.div`
   align-items: center;
   margin: 50px auto 0;
   color: #fff;
+
+  @font-face {
+    font-family: "sf pro display bold";
+    src: url(../../../assets/fonts/SFPRODISPLAYBOLD.OTF);
+  }
+  Button {
+    font-family: "sf pro display bold";
+  }
 `;
 
 export const CheckoutHeader = styled.div`
@@ -31,4 +39,22 @@ export const Total = styled.span`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
+`;
+export const Saving = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: auto;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 18px;
+  @font-face {
+    font-family: "sf pro display bold";
+    src: url(../../../assets/fonts/SFPRODISPLAYBOLD.OTF);
+  }
+  font-family: "sf pro display bold";
+  color: black;
 `;
