@@ -27,7 +27,7 @@ Made with ❤️.
 ## Tech Stack
 
 - React
-- Redux
+- Context API
 - SCSS
 - Firebase
 - Figma
