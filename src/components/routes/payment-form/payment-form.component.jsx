@@ -62,7 +62,6 @@ const PaymentForm = () => {
     <>
       {currentUser ? (
         <>
-          <div>{cartTotal}</div>
           <div className="pay-section">
             <div className="pay-heading">
               <h1>Pay With Card: </h1>
@@ -153,7 +152,7 @@ const PaymentForm = () => {
               </div>
 
               <Button type="submit" buttonType={BUTTON_TYPE_CLASSES.inverted}>
-                Pay
+                Pay ₹{cartTotal}
               </Button>
             </form>
           </div>

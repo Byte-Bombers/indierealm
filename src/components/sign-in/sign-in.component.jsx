@@ -6,6 +6,7 @@ import {
 } from "../../utils/firebase.utils";
 import { SignInContainer, ButtonsContainer } from "./sign-in.styles.jsx";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { useNavigate } from "react-router";
 
 const SignInForm = () => {
   const defaultFormFields = {
@@ -27,6 +28,8 @@ const SignInForm = () => {
     //const userDocRef = await createUserDocumentFromAuth(user);
   };
 
+  const navigate = useNavigate();
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
@@ -38,6 +41,7 @@ const SignInForm = () => {
     try {
       await signAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
+      navigate("/shop");
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":

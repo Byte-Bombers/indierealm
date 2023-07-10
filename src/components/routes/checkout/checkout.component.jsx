@@ -11,7 +11,8 @@ import CheckoutItem from "../../checkout-item/checkout-item.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../../button/button.component.jsx";
 
 const Checkout = () => {
-  const { cartItems, cartTotal } = useContext(CartContext);
+  const { cartItems, cartTotal, cartMrpTotal } = useContext(CartContext);
+  const Savings = cartMrpTotal - cartTotal;
   const navigate = useNavigate();
   const navigateHandler = () => {
     navigate("payment");
@@ -37,6 +38,7 @@ const Checkout = () => {
         return <CheckoutItem key={cartItem.id} cartItem={cartItem} />;
       })}
       <Total>Total: ₹{cartTotal}</Total>
+      <Total>Savings: ₹{Savings}</Total>
       <Button
         buttonType={BUTTON_TYPE_CLASSES.inverted}
         onClick={navigateHandler}
