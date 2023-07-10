@@ -107,3 +107,12 @@
     }
   }
 }
+.not-signed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  .h2{
+    color: aqua;
+  }
+}
