@@ -66,13 +66,14 @@ const PaymentForm = () => {
           <div className="pay-section">
             <div className="pay-heading">
               <h1>Pay With Card: </h1>
-              <img src={Secure} alt={"secure"} />
-              <h3>secure pay</h3>
+              <div className="secure">
+                <img src={Secure} alt={"secure"} />
+                <h3>secure pay</h3>
+              </div>
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
               <FormInput
-                className="card-info"
                 label="Card Information"
                 onChange={handleChange}
                 type="number"
@@ -83,7 +84,7 @@ const PaymentForm = () => {
                 value={cardInformation}
               />
 
-              <div className="monthsnall">
+              <div className="months-all">
                 <FormInput
                   label="MM"
                   onChange={handleChange}
