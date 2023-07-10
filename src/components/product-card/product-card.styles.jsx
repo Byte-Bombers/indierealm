@@ -32,11 +32,15 @@ export const ProductCardContainer = styled.div`
       box-shadow: 0 0 10px #26ff00;
       cursor: pointer;
     }
-
+    @font-face {
+      font-family: "sf pro display";
+      src: url(../../../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+    }
     button {
       transition: all 0.2s ease-in-out;
       opacity: 0.85;
       display: flex;
+      font-family: "sf pro display";
     }
   }
 `;

@@ -22,6 +22,11 @@ export const CartDropdownContainer = styled.div`
 
   ${BaseButton}, ${GoogleSignInButton}, ${InvertedButton} {
     margin-top: auto;
+    @font-face {
+      font-family: "sf pro display";
+      src: url(../../../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+    }
+    font-family: "sf pro display";
   }
 `;
 export const EmptyMessage = styled.span`

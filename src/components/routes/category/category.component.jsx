@@ -31,6 +31,7 @@ const Category = () => {
     <>
       <SearchBar>
         <input
+          className="search-text"
           type="text"
           onChange={onSearchChange}
           placeholder="search by name"
