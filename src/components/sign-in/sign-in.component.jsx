@@ -25,6 +25,7 @@ const SignInForm = () => {
 
   const SignInWithGoogle = async () => {
     await SignInWithGooglePopup();
+    navigate("/shop");
     //const userDocRef = await createUserDocumentFromAuth(user);
   };
 
