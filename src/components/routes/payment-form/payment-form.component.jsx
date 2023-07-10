@@ -58,14 +58,91 @@ const PaymentForm = () => {
   return (
     <>
       {currentUser ? (
-        <div>
-          <h1>Welcome</h1>
-        </div>
+        <>
+          <div className="pay-section">
+            <div className="pay-heading">
+              <h1>Pay With Card: </h1>
+              <img src="../../../assets/card-icon/lock.svg" alt="secure" />
+              <h3>secure pay</h3>
+            </div>
+
+            <form onSubmit={handleSubmit}>
+              <FormInput
+                className="card-info"
+                label="Card Information"
+                onChange={handleChange}
+                type="number"
+                maxLength="16"
+                pattern="\d{10}"
+                title="Please enter exactly 16 digits"
+                name="cardInformation"
+                value={cardInformation}
+              />
+
+              <div className="monthsnall">
+                <FormInput
+                  label="MM"
+                  onChange={handleChange}
+                  type="number"
+                  max="12"
+                  pattern="\d{10}"
+                  name="month"
+                  value={month}
+                />
+
+                <FormInput
+                  label="YY"
+                  onChange={handleChange}
+                  type="number"
+                  name="year"
+                  value={year}
+                />
+
+                <FormInput
+                  label="CVV"
+                  onChange={handleChange}
+                  type="password"
+                  name="CVV"
+                  value={CVV}
+                />
+              </div>
+
+              <div className="namenstuff">
+                <FormInput
+                  label="Name"
+                  onChange={handleChange}
+                  type="text"
+                  name="userName"
+                  value={userName}
+                />
+
+                <FormInput
+                  label="Country"
+                  onChange={handleChange}
+                  type="text"
+                  name="country"
+                  value={country}
+                />
+
+                <FormInput
+                  label="ZIP Code"
+                  onChange={handleChange}
+                  type="number"
+                  name="zipCode"
+                  value={zipCode}
+                />
+              </div>
+
+              <Button type="submit" buttonType={BUTTON_TYPE_CLASSES.inverted}>
+                Pay
+              </Button>
+            </form>
+          </div>
+        </>
       ) : (
         <div className="not-signed">
           <h1>
-            You need to <h2 onClick={navigateHandler}>Sign In</h2> before
-            proceeding
+            You need to <h2 onClick={navigateHandler}>Sign In</h2> to proceed
           </h1>
         </div>
       )}
