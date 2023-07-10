@@ -2,7 +2,6 @@ import "./payment-form.styles.scss";
 import { UserContext } from "../../../contexts/user.context";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router";
-import FormInput from "../../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../../button/button.component";
 import Secure from "../../../assets/card-icon/lock.svg";
 import { CartContext } from "../../../contexts/cart.context";
@@ -71,71 +70,85 @@ const PaymentForm = () => {
                 <h3>secure pay</h3>
               </div>
             </div>
-
             <form className="form" onSubmit={handleSubmit}>
-              <FormInput
-                label="Card Information"
-                onChange={handleChange}
-                type="number"
-                maxLength="16"
-                pattern="\d{10}"
-                title="Please enter exactly 16 digits"
-                name="cardInformation"
-                value={cardInformation}
-              />
-
-              <div className="months-all">
-                <FormInput
-                  label="MM"
+              <label className="cardinfo">
+                Card Information
+                <input
                   onChange={handleChange}
                   type="number"
-                  max="12"
+                  maxLength="16"
                   pattern="\d{10}"
-                  name="month"
-                  value={month}
+                  title="Please enter exactly 16 digits"
+                  name="cardInformation"
+                  placeholder="1234 1234 1234 1234"
+                  value={cardInformation}
                 />
+              </label>
 
-                <FormInput
-                  label="YY"
-                  onChange={handleChange}
-                  type="number"
-                  name="year"
-                  value={year}
-                />
+              <div className="small-infos">
+                <label className="smol">
+                  MM
+                  <input
+                    onChange={handleChange}
+                    type="number"
+                    max="12"
+                    pattern="\d{10}"
+                    name="month"
+                    value={month}
+                  />
+                </label>
 
-                <FormInput
-                  label="CVV"
-                  onChange={handleChange}
-                  type="password"
-                  name="CVV"
-                  value={CVV}
-                />
+                <label className="smol">
+                  YY
+                  <input
+                    onChange={handleChange}
+                    type="number"
+                    name="year"
+                    value={year}
+                  />
+                </label>
+
+                <label className="smol">
+                  CVV
+                  <input
+                    onChange={handleChange}
+                    type="password"
+                    name="CVV"
+                    value={CVV}
+                  />
+                </label>
               </div>
 
-              <div className="namenstuff">
-                <FormInput
-                  label="Name"
-                  onChange={handleChange}
-                  type="text"
-                  name="userName"
-                  value={userName}
-                />
+              <div className="names">
+                <label className="beeg">
+                  Name
+                  <input
+                    onChange={handleChange}
+                    type="text"
+                    name="userName"
+                    value={userName}
+                  />
+                </label>
 
-                <FormInput
-                  label="Country"
-                  onChange={handleChange}
-                  type="text"
-                  name="country"
-                  value={country}
-                />
+                <label className="beeg">
+                  Country
+                  <input
+                    onChange={handleChange}
+                    type="text"
+                    name="country"
+                    value={country}
+                  />
+                </label>
 
-                <FormInput
-                  label="ZIP Code"
-                  onChange={handleChange}
-                  type="number"
-                  name="zipCode"
-                  value={zipCode}
-                />
+                <label className="beeg">
+                  ZIP Code
+                  <input
+                    onChange={handleChange}
+                    type="number"
+                    name="zipCode"
+                    value={zipCode}
+                  />
+                </label>
               </div>
 
               <Button type="submit" buttonType={BUTTON_TYPE_CLASSES.inverted}>

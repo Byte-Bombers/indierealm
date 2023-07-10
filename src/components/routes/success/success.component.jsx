@@ -13,7 +13,7 @@ const Success = () => {
   return (
     <div>
       {currentUser ? (
-        <div>
+        <div className="congo">
           <h1>Congratulations, you have completed your payment</h1>
           <h2>
             Continue to your <span onClick={navigateHandler}>Home</span>

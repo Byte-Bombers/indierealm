@@ -1,0 +1,23 @@
+.congo {
+  padding-top: 100px;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 3px #bbdb01;
+  }
+  h2 {
+    text-shadow: 0 0 3px #bbdb01;
+    span {
+      color: #bbdb01;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -9,8 +9,8 @@ width:800px;
   margin-left: 510px;
   color: #fff;
   
-  width: 350px;
-  height: 30px;
+   height: 50px;
+    width: 400px;
   border-radius: 6px;
   background-color: transparent;
   &:focus {
