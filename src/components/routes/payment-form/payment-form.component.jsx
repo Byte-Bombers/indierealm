@@ -62,6 +62,7 @@ const PaymentForm = () => {
     <>
       {currentUser ? (
         <>
+          <div>{cartTotal}</div>
           <div className="pay-section">
             <div className="pay-heading">
               <h1>Pay With Card: </h1>
