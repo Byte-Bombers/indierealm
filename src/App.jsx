@@ -6,6 +6,7 @@ import Checkout from "./components/routes/checkout/checkout.component";
 import Navigation from "./components/routes/navigation/navigation.component";
 import { Routes, Route } from "react-router-dom";
 import PaymentForm from "./components/routes/payment-form/payment-form.component";
+import Success from "./components/routes/success/success.component";
 
 const App = () => {
   return (
@@ -17,7 +18,10 @@ const App = () => {
         <Route path="auth" element={<Authentication />} />
         <Route path="checkout">
           <Route index element={<Checkout />} />
-          <Route path="payment" element={<PaymentForm />} />
+          <Route path="payment">
+            <Route index element={<PaymentForm />} />
+            <Route path="success" element={<Success />} />
+          </Route>
         </Route>
       </Route>
     </Routes>

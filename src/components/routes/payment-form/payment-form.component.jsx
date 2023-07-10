@@ -4,10 +4,13 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router";
 import FormInput from "../../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../../button/button.component";
+import Secure from "../../../assets/card-icon/lock.svg";
+import { CartContext } from "../../../contexts/cart.context";
 
 const PaymentForm = () => {
   const { currentUser } = useContext(UserContext);
-  //   console.log(currentUser);
+  const { cartTotal } = useContext(CartContext);
+  //   console.log(cartTotal);
   const navigate = useNavigate();
   const navigateHandler = () => {
     navigate("/auth");
@@ -50,6 +53,7 @@ const PaymentForm = () => {
 
     try {
       resetFormFields();
+      navigate("success");
     } catch (err) {
       console.log(err);
     }
@@ -62,7 +66,7 @@ const PaymentForm = () => {
           <div className="pay-section">
             <div className="pay-heading">
               <h1>Pay With Card: </h1>
-              <img src="../../../assets/card-icon/lock.svg" alt="secure" />
+              <img src={Secure} alt={"secure"} />
               <h3>secure pay</h3>
             </div>
 
