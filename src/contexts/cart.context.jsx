@@ -30,6 +30,7 @@ export const CartContext = createContext({
   setCartItems: () => {},
   cartCount: 0,
   cartTotal: 0,
+  cartMrpTotal: 0,
 });
 
 // eslint-disable-next-line react/prop-types
@@ -38,6 +39,7 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(getLocalCartData());
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
+  const [cartMrpTotal, setCartMrpTotal] = useState(0);
 
   useEffect(() => {
     const newCartCount = cartItems.reduce(
@@ -54,6 +56,15 @@ export const CartProvider = ({ children }) => {
       0
     );
     setCartTotal(newCartTotal);
+  }, [cartItems]);
+
+  useEffect(() => {
+    const newCartMrpTotal = cartItems.reduce(
+      (accumulator, currentItem) =>
+        accumulator + currentItem.quantity * currentItem.mrp,
+      0
+    );
+    setCartMrpTotal(newCartMrpTotal);
   }, [cartItems]);
 
   useEffect(() => {
@@ -77,6 +88,7 @@ export const CartProvider = ({ children }) => {
     clearCartItems,
     cartCount,
     cartTotal,
+    cartMrpTotal,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
