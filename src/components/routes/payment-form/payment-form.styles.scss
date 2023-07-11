@@ -111,8 +111,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: antiquewhite;
-  .h2{
-    color: aqua;
+  
+  h2{
+    color: rgb(247, 253, 253);
+    span{ color: aqua;
+    &:hover{
+      cursor: pointer;
+    }}
   }
 }
